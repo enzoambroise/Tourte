@@ -194,7 +194,7 @@ La gestion des erreurs inclut l'indication de la ligne, du type d'erreur et de l
 
         Exemple : compteur = 0; while (compteur < 5) { print(compteur); compteur = compteur + 1; }; -> 0;1;2;3;4
 
-# 5. Exemple de Code Complet ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# -- 5. Exemple de Code Complet --
 
     # Définition d'une fonction pour saluer
     func saluer(nom) {
