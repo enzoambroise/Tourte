@@ -194,60 +194,60 @@ La gestion des erreurs inclut l'indication de la ligne, du type d'erreur et de l
 
         Exemple : compteur = 0; while (compteur < 5) { print(compteur); compteur = compteur + 1; }; -> 0;1;2;3;4
 
-5. Exemple de Code Complet
+# 5. Exemple de Code Complet ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Définition d'une fonction pour saluer
-func saluer(nom) {
-    print("Bonjour, " + nom + " !");
-};
-
-# Demander le nom de l'utilisateur
-nom_utilisateur = input("Quel est votre nom ? ");
-
-# Appel de la fonction saluer
-saluer(nom_utilisateur);
-
-# Demander un nombre et effectuer des opérations
-nombre_str = input("Entrez un nombre entier : ");
-nombre = int(nombre_str); # Conversion en entier
-
-print("Votre nombre est :", nombre);
-
-# Opérations arithmétiques
-resultat_addition = nombre + 10;
-resultat_multiplication = nombre * 2;
-resultat_puissance = nombre ** 3;
-resultat_racine_carree = nombre /// 2; # Racine carrée
-
-print("Nombre + 10 :", resultat_addition);
-print("Nombre * 2 :", resultat_multiplication);
-print("Nombre puissance 3 :", resultat_puissance);
-print("Racine carrée du nombre :", resultat_racine_carree);
-
-# Utilisation d'une liste
-ma_liste_de_nombres = [10, 20, 30, 40, 50];
-print("Premier élément de la liste :", ma_liste_de_nombres[0]);
-
-# Vérifier si le nombre est dans la liste
-if (nombre in ma_liste_de_nombres) {
-    print("Votre nombre est dans la liste !");
-} elif (nombre > 50) {
-    print("Votre nombre est grand, mais pas dans la liste.");
-} else {
-    print("Votre nombre n'est pas dans la liste.");
-};
-
-# Utilisation d'un dictionnaire
-informations_utilisateur = ||"nom":nom_utilisateur, "age":nombre||;
-print("Informations via dictionnaire : Nom =", informations_utilisateur["nom"], ", Âge =", informations_utilisateur["age"]);
-
-# Boucle while pour compter jusqu'au nombre entré
-compteur_boucle = 0;
-print("Comptage jusqu'à votre nombre :");
-while (compteur_boucle <= nombre) {
-    print(compteur_boucle);
-    compteur_boucle = compteur_boucle + 1;
-};
-
-print("Fin du programme.");
+    # Définition d'une fonction pour saluer
+    func saluer(nom) {
+        print("Bonjour, " + nom + " !");
+    };
+    
+    # Demander le nom de l'utilisateur
+    nom_utilisateur = input("Quel est votre nom ? ");
+    
+    # Appel de la fonction saluer
+    saluer(nom_utilisateur);
+    
+    # Demander un nombre et effectuer des opérations
+    nombre_str = input("Entrez un nombre entier : ");
+    nombre = int(nombre_str); # Conversion en entier
+    
+    print("Votre nombre est :", nombre);
+    
+    # Opérations arithmétiques
+    resultat_addition = nombre + 10;
+    resultat_multiplication = nombre * 2;
+    resultat_puissance = nombre ** 3;
+    resultat_racine_carree = nombre /// 2; # Racine carrée
+    
+    print("Nombre + 10 :", resultat_addition);
+    print("Nombre * 2 :", resultat_multiplication);
+    print("Nombre puissance 3 :", resultat_puissance);
+    print("Racine carrée du nombre :", resultat_racine_carree);
+    
+    # Utilisation d'une liste
+    ma_liste_de_nombres = [10, 20, 30, 40, 50];
+    print("Premier élément de la liste :", ma_liste_de_nombres[0]);
+    
+    # Vérifier si le nombre est dans la liste
+    if (nombre in ma_liste_de_nombres) {
+        print("Votre nombre est dans la liste !");
+    } elif (nombre > 50) {
+        print("Votre nombre est grand, mais pas dans la liste.");
+    } else {
+        print("Votre nombre n'est pas dans la liste.");
+    };
+    
+    # Utilisation d'un dictionnaire
+    informations_utilisateur = ||"nom":nom_utilisateur, "age":nombre||;
+    print("Informations via dictionnaire : Nom =", informations_utilisateur["nom"], ", Âge =", informations_utilisateur["age"]);
+    
+    # Boucle while pour compter jusqu'au nombre entré
+    compteur_boucle = 0;
+    print("Comptage jusqu'à votre nombre :");
+    while (compteur_boucle <= nombre) {
+        print(compteur_boucle);
+        compteur_boucle = compteur_boucle + 1;
+    };
+    
+    print("Fin du programme.");
 
