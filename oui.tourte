@@ -1,0 +1,111 @@
+# Ceci est un programme Tourte simple
+func saluer(nom) {
+    print("Bonjour, " + nom + " !");
+};
+
+maVariable = 10;
+autreVariable = 3.14;
+
+if (maVariable > 5 and autreVariable < 4.0) {
+    print("Conditions remplies !");
+} elif (maVariable == 10 or autreVariable == 3.14) {
+    print("Une des conditions est vraie !");
+} else {
+    print("Conditions non remplies.");
+};
+
+compteur = 0;
+while (compteur < 3) {
+    print("Boucle:", compteur);
+    compteur = compteur + 1;
+};
+
+# UNCOMMENT LES LIGNES CI-DESSOUS POUR TESTER LES ERREURS SÉMANTIQUES :
+
+# Erreur: Utilisation d'une variable non déclarée
+# erreurNonDeclaree = variableQuiNExistePas; 
+
+# Erreur: Appel de fonction non déclarée
+# fonctionInconnue(); 
+
+# Erreur: Nombre d'arguments incorrect
+# saluer("Alice", 123);
+
+# Erreur: Redéclaration d'une fonction (si on la mettait ici)
+# func saluer(prenom) { print("Salut " + prenom); };
+
+# Erreur: Redéclaration de variable dans la même portée
+# maVariable = 20; # Ceci est une réaffectation, pas une redéclaration. OK.
+# nouvelleVar = 1;
+# nouvelleVar = 2; # Ceci est une réaffectation, pas une redéclaration. OK.
+# {
+#     scopeVar = 10;
+#     scopeVar = 20; # OK
+#     # nouvelleVar = 3; # Réaffectation de variable parent OK
+#     # scopeVar = 100; # Ne déclenchera pas l'erreur de "déjà déclaré" car c'est une réaffectation
+# }
+# nouvelleVar = 1; # Déclencherait une erreur si la portée était la même, mais ici, c'est OK après la première déclaration
+
+# Exemple de dictionnaire et de liste
+infos_perso = ||"nom": "Jean", "age": 30, "ville": "Paris"||;
+print("Nom:", infos_perso["nom"]);
+print("Age:", infos_perso["age"]);
+
+liste_courses = ["pommes", "bananes", "poires"];
+print("Premier article:", liste_courses[0]);
+
+liste_courses[0] = "cerises"; # Test d'affectation avec subscripting
+print("Premier article modifié:", liste_courses[0]);
+infos_perso["age"] = 31; # Test d'affectation avec subscripting
+print("Nouvel âge:", infos_perso["age"]);
+
+
+# Test de 'in' et 'not in'
+if ("pommes" in liste_courses) {
+    print("Les pommes sont dans la liste.");
+};
+
+if ("oranges" not in liste_courses) {
+    print("Les oranges ne sont pas dans la liste.");
+};
+
+# Test de conversion de type et input
+age_str = input("Quel est votre âge ? ");
+age_int = int(age_str);
+print("Votre âge est:", age_int);
+
+# Test de l'opérateur racine n-ième
+racine_cubique_8 = 8 /// 3;
+print("Racine cubique de 8:", racine_cubique_8);
+
+# Test de l'opérateur division euclidienne
+division_euclidienne = 10 // 3;
+print("Division euclidienne 10 // 3:", division_euclidienne);
+
+fin_du_programme = "Oui";
+print("Fin du programme:", fin_du_programme);
+
+func testScope(valeur) {
+    localVariable = 100;
+    print("Dans la fonction, valeur:", valeur);
+    print("Dans la fonction, localVariable:", localVariable);
+    # testInner = 10; # Déclaré ici
+    # print(testInner);
+    # {
+    #     testInner = 20; # Réaffectation dans la portée imbriquée
+    #     innerInner = 30;
+    # }
+    # print(testInner); # Devrait être 20 si la réaffectation est persistante dans la fonction.
+    # print(innerInner); # Erreur de portée
+};
+
+testScope(50);
+# print(localVariable); # Décommenter pour tester l'erreur de portée: localVariable n'existe pas ici
+
+
+func redeclarationTest() {
+    x = 1;
+    # func innerFunc() {
+    #     # x = 4; # Ceci est une réaffectation de la `x` de la fonction parente, pas une redéclaration.
+    # };
+};
