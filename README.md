@@ -1,4 +1,7 @@
 # Trourte
+Description :
+Le Tourte est un langage qui se veut proche du Python mais à plus bas niveau. Cela permet donc de créer des scripts et des applications personnalisés comme avec Python, tout en étant plus rapide.
+
 Documentation du Langage "Tourte"
 
 Cette documentation couvre les fonctionnalités principales du langage. Toute précision non mentionnée est soit implicitement logique, soit mènera à une erreur lors de l'exécution.
