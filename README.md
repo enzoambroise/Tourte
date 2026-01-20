@@ -1,4 +1,4 @@
-# Trourte
+# Tourte
 # Description :
 
 Objectif : apprendre comment fonctionne un langage de programmation.
